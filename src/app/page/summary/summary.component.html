@@ -1,0 +1,47 @@
+<div class="flex justify-center flex-col text-center">
+    <div class="rounded border w-[480px] mx-auto">
+        <div class="w-full h-8 bg-zinc-100"></div>
+        <div class="mt-2 mb-2 flex gap-4 flex-col justify-center">
+            <h1 class="font-bold">Welcome</h1>
+            <p>With supporting text below as a natural lead-in to additional content.</p>
+            <button (click)="navigateClick()"
+                class="bg-blue-500 hover:bg-blue-700 mx-auto py-1 px-2 w-[180px] text-white rounded-md mb-2 mt-2">See
+                transactions</button>
+        </div>
+        <div class="w-full h-8 bg-zinc-100 py-1">You have {{ total }} transactions</div>
+    </div>
+    <div class="grid gap-2 grid-cols-2 grid-rows-2 w-[480px] mx-auto mt-5">
+        <div class="rounded border w-[238px] flex flex-col gap-2 py-2 px-2">
+            <h1 class="font-bold">{{ incomeCount }}</h1>
+            <p>Income</p>
+            <button (click)="navigateClick()"
+                class="bg-blue-500 hover:bg-blue-700 mx-auto py-1 px-2 w-[100px] text-white rounded-md mt-2">
+                See all
+            </button>
+        </div>
+        <div class="rounded border w-[238px] flex flex-col gap-2 py-2 px-2">
+            <h1 class="font-bold">{{ outcomeCount }}</h1>
+            <p>Outcome</p>
+            <button (click)="navigateClick()"
+                class="bg-blue-500 hover:bg-blue-700 mx-auto py-1 px-2 w-[100px] text-white rounded-md mt-2">
+                See all
+            </button>
+        </div>
+        <div class="rounded border w-[238px] flex flex-col gap-2 py-2 px-2">
+            <h1 class="font-bold">{{ loansCount }}</h1>
+            <p>Loans</p>
+            <button (click)="navigateClick()"
+                class="bg-blue-500 hover:bg-blue-700 mx-auto py-1 px-2 w-[100px] text-white rounded-md mt-2">
+                See all
+            </button>
+        </div>
+        <div class="rounded border w-[238px] flex flex-col gap-2 py-2 px-2">
+            <h1 class="font-bold">{{ investmentsCount }}</h1>
+            <p>Investments</p>
+            <button (click)="navigateClick()"
+                class="bg-blue-500 hover:bg-blue-700 mx-auto py-1 px-2 w-[100px] text-white rounded-md mt-2">
+                See all
+            </button>
+        </div>
+    </div>
+</div>

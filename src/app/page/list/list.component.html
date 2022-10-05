@@ -1,0 +1,78 @@
+<div class="flex justify-center flex-col text-center mx-auto w-[480px] mb-5">
+    <tabset class="member-tabset">
+        <tab heading="Income">
+            <table class="w-full bg-white border-collapse border-2 border-blue-500 border-solid text-black">
+                <thead class="bg-blue-500">
+                    <tr>
+                        <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Name</th>
+                        <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let info of incomeData">
+                        <td class="border-2 border-blue-500 border-solid p-1">{{ info.name.first }} {{info.name.last}}
+                        </td>
+                        <td class="border-2 border-blue-500 border-solid p-1">{{ info.amount }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </tab>
+        <tab heading="Outcome">
+            <h2>
+                <table class="w-full bg-white border-collapse border-2 border-blue-500 border-solid text-black">
+                    <thead class="bg-blue-500">
+                        <tr>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Name</th>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let info of outcomeData">
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.name.first }}
+                                {{info.name.last}}</td>
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.amount }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h2>
+        </tab>
+        <tab heading="Loans">
+            <h2>
+                <table class="w-full bg-white border-collapse border-2 border-blue-500 border-solid text-black">
+                    <thead class="bg-blue-500">
+                        <tr>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Name</th>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let info of loansData">
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.name.first }}
+                                {{info.name.last}}</td>
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.amount }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h2>
+        </tab>
+        <tab heading="Investments">
+            <h2>
+                <table class="w-full bg-white border-collapse border-2 border-blue-500 border-solid text-black">
+                    <thead class="bg-blue-500">
+                        <tr>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Name</th>
+                            <th class="border-2 border-blue-500 border-solid p-1 font-medium text-white">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let info of investmentsData">
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.name.first }}
+                                {{info.name.last}}</td>
+                            <td class="border-2 border-blue-500 border-solid p-1">{{ info.amount }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h2>
+        </tab>
+    </tabset>
+</div>
